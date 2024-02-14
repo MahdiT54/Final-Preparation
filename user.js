@@ -8,7 +8,7 @@ async function onSearchChange(event) {
   renderPosts(id); // renderPosts is a function that takes user id as an argument
 }
 
-async function renderPosts(userId) {
+async function renderPosts(id) {
   const posts = await fetch(
     // fetch is used to make a request to the server
     `https://jsonplaceholder.typicode.com/posts?userId=${id}`
